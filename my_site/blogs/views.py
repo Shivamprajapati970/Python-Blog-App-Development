@@ -27,7 +27,4 @@ def home(request):
     return render(request, template_name='blogs/home.html',context=context)
 
 def about(request):
-    context={
-        'title':'ABOUT PAGE'
-    }
-    return render(request, template_name='blogs/about.html',context=context)
+    return render(request, template_name='blogs/about.html')
